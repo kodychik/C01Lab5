@@ -36,8 +36,5 @@ jobs:
       - name: Start server
         run: npm run dev &
 
-      - name: Wait for server to be up
-        run: npx wait-on http://localhost:4000
-
       - name: Run tests
         run: npm test
